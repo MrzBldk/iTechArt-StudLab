@@ -1,0 +1,69 @@
+.join {
+    background: url('../media/join.png');
+}
+
+.join_header {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.join_form {
+    display: flex;
+    justify-content: center;
+}
+
+.join_input {
+    position: relative;
+    border-radius: 33.5px;
+    border: none;
+    outline: none;
+    height: 67px;
+    width: 30vw;
+    padding: 0 2.5vw;
+    font-family: 'Roboto';
+    font-size: 16px;
+    left: 2.5vw;
+}
+
+.join_btn {
+    border-radius: 33.5px;
+    color: white;
+    background-color: #ab0534;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    border: none;
+    height: 60px;
+    width: 10vw;
+    position: relative;
+    right: 2.5vw;
+}
+
+.join_br {
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    .join_form {
+        align-items: center;
+        flex-direction: column;
+    }
+    .join_input{
+        left: 0;
+        margin-bottom: 10px;
+    }
+    .join_btn {
+        right: 0;
+        width: 30vw;
+    }
+}
+
+@media(max-width: 576px) {
+    .join_input{
+        width: auto;
+    }
+}
