@@ -1,0 +1,88 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    grid-column: span 4;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 992px) {
+        grid-column: span 6;
+    }
+
+    &:first-of-type {
+        grid-column: 1 / span 4;
+
+        @media (max-width: 992px) {
+            grid-column: 1/ span 6;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__body {
+        padding: 1.25rem;
+    }
+
+    &__title {
+        margin-bottom: .75rem;
+
+        font: {
+            size: 18px;
+            family: 'Roboto';
+        }
+    }
+
+    &__text {
+        margin: {
+            top: 0;
+            bottom: 1rem;
+        }
+
+        font: {
+            family: 'Roboto';
+            size: 14px;
+        }
+    }
+
+    &__price {
+        color: $dark-pink;
+
+        font: {
+            size: 1.5rem;
+            weight: $bold;
+            family: 'Roboto';
+        }
+
+        ;
+    }
+
+    &__rating {
+        color: #ed8000;
+        font-size: 10px;
+    }
+
+    &__footer {
+        padding: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        color: $dark-pink;
+        text-decoration: none;
+
+        font: {
+            size: 1rem;
+            weight: $bold;
+            family: 'Roboto';
+        }
+    }
+
+    &__stats {
+        color: #666666;
+        font-size: 14px;
+    }
+}

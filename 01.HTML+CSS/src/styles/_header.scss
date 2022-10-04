@@ -1,0 +1,79 @@
+.header {
+    background-color: $dark-pink;
+    color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.17);
+    position: sticky;
+    z-index: 1;
+    min-height: 100px;
+
+    @media (max-width: 576px) {
+        padding: 5px;
+    }
+
+    &__container {
+        @extend %container !optional;
+        align-items: center;
+        min-height: 100px;
+    }
+
+    &__link {
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    &__logo {
+        color: white;
+        text-decoration: none;
+        grid-column: span 3;
+
+        font: {
+            family: 'Roboto';
+            size: 3em;
+        }
+
+        @media (max-width: 1200px) {
+            grid-column: span 12;
+            text-align: center;
+        }
+
+        & > *:first-child {
+            font-weight: $light;
+        }
+        
+        & > *:last-child {
+            font-weight: $bold;
+        }
+    }
+
+    &__nav {
+        display: contents;
+    }
+
+    &__icons {
+        grid-column: 10;
+
+        @media (max-width: 1200px) {
+            grid-column: 5 / span 3;
+            text-align: center;
+        }
+
+        @media (max-width: 576px) {
+            grid-column: 5 / span 8;
+            text-align: end;
+        }
+    }
+
+    &__auth {
+        grid-column: 11 / span 2;
+
+        @media (max-width: 1200px) {
+            grid-column: 8 / span 5;
+            text-align: end;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+}

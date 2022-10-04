@@ -1,0 +1,47 @@
+.popular {
+    background-color: $pale-blue;
+    @include section-padding;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__header {
+        grid-column: span 12;
+        @include header-font;
+    }
+
+    &__subheader {
+        @include subheader-position;
+
+        font: {
+            size: 14px;
+            weight: $medium;
+        }
+    }
+
+    &__btn {
+        grid-column: span 4;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        background: url('../media/btn_purple.png');
+        color: white;
+        height: 100px;
+
+        font: {
+            size: 1.5rem;
+            family: 'Roboto';
+            weight: $bold;
+        }
+
+        &:first-of-type {
+            grid-column: 1 / span 4;
+            background: url('../media/btn_pink.png');
+        }
+
+        &:last-of-type {
+            background: url('../media/btn_blue.png');
+        }
+    }
+}

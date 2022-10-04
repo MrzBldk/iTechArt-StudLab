@@ -1,0 +1,66 @@
+.footer {
+    background-color: #292662;
+    color: white;
+    padding: 90px 0;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__contacts {
+        grid-column: span 3;
+
+        font: {
+            size: 14px;
+            style: normal;
+
+        }
+
+        @media (max-width: 992px) {
+            grid-column: span 12;
+        }
+    }
+
+    &__link {
+        color: white;
+        text-decoration: none;
+
+        &--tel {
+            font-size: 18px;
+        }
+    }
+
+    &__links {
+        grid-column: 5 / span 8;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+
+        @media (max-width: 992px) {
+            grid-column: 1 / span 12;
+        }
+    }
+
+    &__hr {
+        grid-column: span 12;
+        border: 1px solid #494679;
+    }
+
+    &__socials {
+        grid-column: span 8;
+
+        font: {
+            size: 1rem;
+            family: 'Roboto';
+        }
+    }
+
+    &__copyright {
+        grid-column: span 4;
+
+        font: {
+            size: 14px;
+            family: 'Roboto';
+        }
+    }
+}
