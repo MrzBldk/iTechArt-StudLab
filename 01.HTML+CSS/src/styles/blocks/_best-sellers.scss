@@ -1,0 +1,21 @@
+.best-sellers {
+    @include section-padding;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__header {
+        grid-column: span 12;
+        @include header-font;
+    }
+
+    &__subheader {
+        @include subheader-position;
+        @include subheader-font;
+    }
+
+    &__btn {
+        @extend %section-btn
+    }
+}

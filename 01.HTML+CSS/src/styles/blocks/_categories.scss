@@ -1,0 +1,93 @@
+.categories {
+    background-color: $pale-blue;
+    @include section-padding;
+
+    @media (max-width: 576px) {
+        padding: 0 5px;
+    }
+
+    &__container {
+        @extend %container;
+    }
+
+    &__header {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    &__category {
+        grid-column: span 2;
+        width: 100%;
+        height: 0;
+        text-align: center;
+        position: relative;
+
+        padding: {
+            top: 35%;
+            bottom: 65%;
+        }
+
+        @media (max-width: 1200px) {
+            grid-column: span 3;
+        }
+
+        @media (max-width: 992px) {
+            grid-column: span 4;
+        }
+
+        @media (max-width: 992px) {
+            grid-column: span 6;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            padding-bottom: calc(100% - 2px);
+            left: 10%;
+            bottom: 0;
+            width: 80%;
+
+            border: {
+                bottom: 1px solid $dark-pink;
+                top: 1px solid $dark-pink;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            padding-left: calc(100% - 2px);
+            bottom: 10%;
+            left: 0;
+            height: 80%;
+
+            border: {
+                left: 1px solid $dark-pink;
+                right: 1px solid $dark-pink;
+            }
+        }
+
+        &:hover {
+            background-color: $dark-pink;
+            color: white !important;
+
+            & .categories__icon {
+                color: white;
+            }
+        }
+    }
+
+    &__subheader {
+        margin-top: 15px;
+
+        font: {
+            weight: $medium;
+            size: 18px;
+        }
+    }
+
+    &__icon {
+        color: $dark-pink;
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,7 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+}
+
+@import 'constants/variables/colors', 'constants/variables/font-weights','constants/mixins','constants/placeholders', 'blocks/card', 'blocks/header', 'blocks/presentation', 'blocks/categories', 'blocks/top', 'blocks/popular', 'blocks/best-sellers', 'blocks/goals', 'blocks/appreciation', 'blocks/blog', 'blocks/join', 'blocks/footer';

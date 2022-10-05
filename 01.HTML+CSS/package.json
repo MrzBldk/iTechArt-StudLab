@@ -1,0 +1,14 @@
+{
+    "name": "first-task",
+    "version": "1.0.0",
+    "description": "First Task",
+    "main": "server.js",
+    "author": "MrzBldk",
+    "scripts": {
+        "start": "node server.js",
+        "build": "sass src/styles/site.scss src/styles/site.css"
+    },
+    "dependencies": {
+        "sass": "^1.55.0"
+    }
+}

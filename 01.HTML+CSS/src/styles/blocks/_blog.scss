@@ -1,0 +1,28 @@
+.blog {
+    @include section-padding;
+    
+    &__container {
+        @extend %container;
+    }
+
+    &__header {
+        grid-column: span 12;
+
+        font: {
+            size: 1.5rem;
+            weight: $bold;
+        }
+    }
+
+    &__subheader {
+        @include subheader-position;
+        @include subheader-font;
+    }
+
+    &__slider {
+        margin-top: 15px;
+        grid-column: 6 / span 2;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
