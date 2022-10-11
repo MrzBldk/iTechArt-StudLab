@@ -1,3 +1,5 @@
+//TASK 6
+
 class stringCalculator {
 
     static sum(x, y) {

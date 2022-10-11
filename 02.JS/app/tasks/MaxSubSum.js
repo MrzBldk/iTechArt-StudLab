@@ -1,3 +1,5 @@
+//TASK 1
+
 //O(n^2)
 function getMaxSubSumSlow(arr) {
 
@@ -37,6 +39,6 @@ function getMaxSubSumFast(arr) {
 }
 
 module.exports = {
-    getMaxSubSumSlow: getMaxSubSumSlow,
-    getMaxSubSumFast: getMaxSubSumFast
+    getMaxSubSumSlow,
+    getMaxSubSumFast
 }

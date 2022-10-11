@@ -1,4 +1,4 @@
-const task8 = require('./task8')
+const BinaryConverter = require('../app/tasks/BinaryConverter')
 
 const binaryTodecimalCases = [
     [[0, 1, 0, 1], '5'],
@@ -9,7 +9,7 @@ describe('convert binary to decimal', () => {
     test.each(binaryTodecimalCases)(
         'given %p returns %p',
         (arg, expectedResult) => {
-            const result = task8.convertBinaryToDecimal(arg)
+            const result = BinaryConverter.convertBinaryToDecimal(arg)
             expect(result).toBe(expectedResult)
         }
     )
@@ -24,7 +24,7 @@ describe('convert decimal to binary', () => {
     test.each(decimalToBinaryCases)(
         'given %p returns %p',
         (arg, expectedResult) => {
-            const result = task8.convertDecimaltoBinary(arg)
+            const result = BinaryConverter.convertDecimaltoBinary(arg)
             expect(result).toBe(expectedResult)
         }
     )

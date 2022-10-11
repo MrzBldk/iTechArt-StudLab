@@ -1,3 +1,5 @@
+//TASK 3
+
 function getLongestIncreasingSubarray(arr) {
     if (!Array.isArray(arr)) throw new TypeError('Must be an array')
     if (arr.some(isNaN)) throw new TypeError('Array must contain only numbers')

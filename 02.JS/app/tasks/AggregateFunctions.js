@@ -1,3 +1,5 @@
+//TASK 2
+
 function getMin(arr) {
     if (!Array.isArray(arr)) throw new TypeError('Must be an array')
     if (arr.some(isNaN)) throw new TypeError('Array must contain only numbers')
@@ -33,7 +35,7 @@ function getMed(arr) {
 }
 
 module.exports = {
-    getMin: getMin,
-    getMax: getMax,
-    getMed: getMed
+    getMin,
+    getMax,
+    getMed
 }

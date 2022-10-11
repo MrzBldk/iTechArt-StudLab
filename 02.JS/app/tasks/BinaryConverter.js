@@ -1,3 +1,5 @@
+//TASK 8
+
 class binaryConverter {
 
     static convertBinaryToDecimal(arr) {
