@@ -8,7 +8,7 @@ function getMaxSubSumSlow(arr) {
 
     for (let i = 0; i < arr.length; i++) {
         let sum = 0
-        for (j = i; j < arr.length; j++) {
+        for (let j = i; j < arr.length; j++) {
             sum += arr[j]
             max = Math.max(max, sum)
         }

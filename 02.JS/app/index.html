@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <div class="field">
+                <div class="control">
+                    <label class="label">First Number</label>
+                    <input class="input is-primary" id="firstNum" type="number">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <label class="label">Second Number</label>
+                    <input class="input is-primary" id="secNum" type="number">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <label class="label">Result</label>
+                    <input class="input" id="resNum" type="number" readonly>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" value="sum" name="operation">
+                        Sum
+                    </label>
+                    <label class="radio">
+                        <input type="radio" value="subtract" name="operation">
+                        Subtract
+                    </label>
+                    <label class="radio">
+                        <input type="radio" value="multiply" name="operation">
+                        Multiply
+                    </label>
+                    <label class="radio">
+                        <input type="radio" value="divide" name="operation">
+                        Divide
+                    </label>
+                    <label class="radio">
+                        <input type="radio" value="pow" name="operation">
+                        Pow
+                    </label>
+                </div>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link" type="button" onclick="calculate()">Calculate</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light" type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
