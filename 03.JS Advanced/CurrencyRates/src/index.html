@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Currency</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container is-max-desktop">
+            <form>
+                <div class="field">
+                    <div class="control">
+                        <input type="date" class="input">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox" value="USD">
+                            USD
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="EUR">
+                            EUR
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="RUB">
+                            RUB
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="CAD">
+                            CAD
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="CNY">
+                            CNY
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="PLN">
+                            PLN
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="UAH">
+                            UAH
+                        </label>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link" type="button" onclick="requestExchangeRates()">Submit</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-link is-light" type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container is-max-desktop" id="tableDiv"></div>
+    </section>
+</body>
