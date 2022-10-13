@@ -20,7 +20,7 @@ async function requestExchangeRates() {
     let $tbody = $table.append('<tbody />').children('tbody');
 
 
-    let date = $('input[type="date"]').val()
+    const date = $('input[type="date"]').val()
     if (!date) throw new Error("Date not specified")
 
     let currencies = ''
@@ -30,7 +30,7 @@ async function requestExchangeRates() {
     if (currencies.length === 0) throw new Error('Currencies not specified')
     currencies = currencies.slice(0, -1);
 
-    let responce = await fetch(`https://api.currencyapi.com/v3/historical?apikey=${key}&currencies=${currencies}&date=${date}&base_currency=BYN`)
+    const responce = await fetch(`https://api.currencyapi.com/v3/historical?apikey=${key}&currencies=${currencies}&date=${date}&base_currency=BYN`)
     let data = await responce.json()
     data = data.data
 
